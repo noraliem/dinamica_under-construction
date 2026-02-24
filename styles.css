@@ -1,0 +1,306 @@
+
+/* Add font files for Manrope */
+@font-face {
+  font-family: 'Manrope';
+  src: url('fonts/manrope.woff2') format('woff2'),
+       url('fonts/manrope.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --font-family-manrope: 'Manrope', sans-serif;
+  --text-rgb-26-50-52: rgba(26, 50, 52, 1);
+}
+
+.text-rgb-26-50-52 {
+  color: var(--text-rgb-26-50-52);
+}
+
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: rgba(244, 237, 232, 1);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prototype Links (v5.6.0) */
+a.prototype-link {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+}
+
+.c-5 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(26, 50, 52, 1);
+  border: none;
+  outline: none;
+}
+
+.i-2-6 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(26, 50, 52, 1);
+  border: none;
+  outline: none;
+}
+
+.m-7 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(26, 50, 52, 1);
+  border: none;
+  outline: none;
+}
+
+.n-8 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(26, 50, 52, 1);
+  border: none;
+  outline: none;
+}
+
+.i-1-9 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(26, 50, 52, 1);
+  border: none;
+  outline: none;
+}
+
+.a-1-10 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(26, 50, 52, 1);
+  border: none;
+  outline: none;
+}
+
+.a-2-11 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(26, 50, 52, 1);
+  border: none;
+  outline: none;
+}
+
+.d-12 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(26, 50, 52, 1);
+  border: none;
+  outline: none;
+}
+
+.logo-4 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.text-13 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-manrope);
+  font-weight: normal;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-26-50-52);
+}
+
+.logo-texto-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 41px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.text-15 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-manrope);
+  font-weight: normal;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-26-50-52);
+}
+
+.text-16 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-manrope);
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -1%;
+  text-decoration: underline;
+  text-transform: none;
+  color: var(--text-rgb-26-50-52);
+}
+
+.text-16 a:hover {
+  opacity: 0.6;
+}
+
+.contacto-14 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 19px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.content-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 75px;
+  padding: 0px;
+  width: 554px;
+  max-width: calc(100vw - 48px);
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.under_construction-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 24px;
+  width: 100%;
+  min-height: 100dvh;
+  margin: 0;
+  flex-grow: 0;
+  flex-shrink: 1;
+  background-color: rgba(244, 237, 232, 1);
+}
+
+@media (max-width: 1024px) {
+  .content-2 {
+    gap: 56px;
+  }
+
+  .text-13,
+  .text-15 {
+    font-size: 20px;
+  }
+
+  .text-16 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .under_construction-1 {
+    padding: 16px;
+  }
+
+  .content-2 {
+    width: 100%;
+    max-width: 554px;
+    gap: 40px;
+  }
+
+  .logo-texto-3 {
+    gap: 24px;
+  }
+
+  .text-13,
+  .text-15 {
+    color: #1a3234;
+    text-align: center;
+    font-family: var(--font-family-manrope);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .text-16 {
+    color: #1a3234;
+    text-align: center;
+    font-family: var(--font-family-manrope);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+  }
+
+  .text-16 a {
+    color: #1a3234;
+    text-align: center;
+    font-family: var(--font-family-manrope);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+  }
+
+  .logo-4 img {
+    width: 247px;
+    height: 41.167px;
+    aspect-ratio: 6 / 1;
+  }
+}

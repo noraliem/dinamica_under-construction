@@ -1,0 +1,122 @@
+:root {
+  --bg: #f5f3f2;
+  --panel: #f6f4f3;
+  --card: #ffffff;
+  --text: #141414;
+  --muted: #4a4a4a;
+  --line: #303030;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 5vw, 3.5rem);
+  padding: clamp(1.2rem, 4vw, 2.25rem);
+}
+
+.intro-card {
+  width: min(66vw, 840px);
+  min-height: clamp(360px, 52vh, 560px);
+  background: var(--panel);
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact-strip {
+  width: clamp(180px, 15vw, 235px);
+  min-height: clamp(300px, 52vh, 540px);
+  background: var(--card);
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+  padding: clamp(1rem, 1.8vw, 1.45rem);
+  text-align: left;
+}
+
+.brand {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  line-height: 1.05;
+}
+
+.contact-strip .brand {
+  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(0.82rem, 1vw, 0.95rem);
+  line-height: 1.5;
+}
+
+.contact-strip p {
+  font-size: clamp(0.62rem, 0.95vw, 0.75rem);
+  line-height: 1.35;
+}
+
+.hours {
+  color: var(--text);
+}
+
+a {
+  color: var(--line);
+  text-underline-offset: 0.2rem;
+  font-size: clamp(0.86rem, 1.05vw, 0.98rem);
+}
+
+.contact-strip a {
+  font-size: clamp(0.62rem, 0.95vw, 0.74rem);
+}
+
+@media (max-width: 900px) {
+  .landing {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
+
+  .intro-card,
+  .contact-strip {
+    width: min(92vw, 640px);
+    min-height: auto;
+  }
+}
+
+.container.not-found {
+  max-width: 680px;
+  margin: 5rem auto 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #1e1e1e;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+}
